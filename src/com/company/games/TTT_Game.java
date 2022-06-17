@@ -11,14 +11,13 @@ import com.company.view.TTT_ConsoleView;
 import com.company.view.TTT_LabelView;
 import com.company.view.View;
 
-
 public class TTT_Game {
     // The model - the logical board containing the fields:
     private TTT_Model model;
 
     // All views displaying the model:
-    private TTT_ButtonView buttonView;	// view using buttons
-    private TTT_LabelView labelView;	// view using labels
+    private TTT_ButtonView buttonView;    // view using buttons
+    private TTT_LabelView labelView;    // view using labels
     private TTT_ConsoleView consoleView;// view printing on console
 
     // A Collection containing all views:
@@ -50,9 +49,8 @@ public class TTT_Game {
         this.controller = new TTT_Controller(model, views);
     }
 
-
     public static void main(String[] args) {
-        final int boardSize = 4; // or 4, 5, ...?
+        final int boardSize = 6; // or 4, 5, ...?
         TTT_Game ticTacToe = new TTT_Game(boardSize);
         ticTacToe.controller.startGame();
     }

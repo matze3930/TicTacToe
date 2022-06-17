@@ -6,12 +6,12 @@ package com.company.games;
  * String, der beispielsweise als Anzeigesymbol im "board" genutzt werden kann.
  */
 public enum TTT_Constants {
-	PLAYER1("X"), PLAYER2("O"), EMPTY(""), CONTINUE("continue"), TIE("tie");
+    PLAYER1("X"), PLAYER2("O"), EMPTY(""), CONTINUE("continue"), TIE("tie");
 
-	public String tag; // Das "Text-Etikett" f�r diese Konstante
+    public String tag; // Das "Text-Etikett" f�r diese Konstante
 
-	TTT_Constants(String tag) {
-		this.tag = tag;
-	}
+    TTT_Constants(String tag) {
+        this.tag = tag;
+    }
 
 }

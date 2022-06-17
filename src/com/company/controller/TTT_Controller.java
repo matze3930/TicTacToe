@@ -27,7 +27,7 @@ public class TTT_Controller implements Controller {
             views.forEach(view -> {
                 view.showBoard(this.model);
             });
-            if (model.checkWin() == TTT_Constants.CONTINUE) {
+            if (model.checkWin_LargeBoard(currentPlayer) == TTT_Constants.CONTINUE) {
                 currentPlayer = nextPlayer(currentPlayer);
                 views.forEach(view -> {
                     view.showNextPlayer(currentPlayer);
@@ -35,7 +35,7 @@ public class TTT_Controller implements Controller {
 
             } else {
                 views.forEach(view -> {
-                    view.showWinner(model.checkWin());
+                    view.showWinner(model.checkWin_LargeBoard(currentPlayer));
                 });
                 gameFinished();
             }
