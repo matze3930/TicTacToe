@@ -83,7 +83,7 @@ public class TTT_LabelView extends JFrame implements View {
 		panel = new JPanel();
 		panel.setLayout(new GridLayout(model.getSize(), model.getSize()));	
 		
-		board = new JLabel[model.getSize()][model.getSize()];		
+		board = new JLabel[model.getSize()][model.getSize()];
 		for (int row = 0; row < model.getSize(); row++)
 			for (int col = 0; col < model.getSize(); col++) {
 				board[row][col] = new JLabel(TTT_Constants.EMPTY.tag);
@@ -104,10 +104,7 @@ public class TTT_LabelView extends JFrame implements View {
 
 
 	@Override
-	public void setController(Controller controller) {
-		this.controller = controller;
-		
-	}
+	public void setController(Controller controller) {this.controller = controller;}
 
 
 	@Override
@@ -115,8 +112,7 @@ public class TTT_LabelView extends JFrame implements View {
 		//build JPanel, JLAbel etc.
 		for (int row = 0; row < model.getSize(); row++)
 			for (int col = 0; col < model.getSize(); col++)
-				board[row][col].setText(model.getEntry(row,col).tag);	
-
+				board[row][col].setText(model.getEntry(row,col).tag);
 	}
 
 
